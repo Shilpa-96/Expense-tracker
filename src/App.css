@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background-color: bisque;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    min-height: 100vh;
+}
+/* .container div{
+    border: 2px solid black;
+} */
+.title{
+    padding:25px 0px;
+}
+.income-expense{
+    display: flex;
+    margin: 10px 0px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    /* border: 20px solid red; */
+    justify-content: space-between;
+}
+.income{
+    color: green;
+}
+.expense {
+    color: red;
+}
+.income-expense div{
+    padding: 20px 30px;
+}
+.income-expense>div:first-of-type {
+    border-right: 1px solid #dedede;
+}
+.transaction-list h4{
+    margin-top: 20px;
+}
+.transaction-list{
+    display: flex;
+    flex-direction: column;
+}
+.transaction-list div{
+    display: flex;
+}
+.transaction-items{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.12);
+    font-size: small;
+    padding: 5px;
+    margin: 5px 0px;
+    min-width: 100%;
+}
+.del-btn button{
+    height:28px ;
+    margin: 5px 0px 0px 2px;
+    background-color: black;
+    color: white;
+    opacity: 0;
+}
+.transaction-items:hover+.del-btn button,.del-btn button:hover{
+    opacity: 1;
+}
+
+.green{
+    border-right: 4px solid rgb(40, 122, 40);
+}
+.red{
+    border-right: 4px solid rgb(132, 34, 34);
+}
+
+.add-transaction{
+    display: flex;
+    flex-direction: column;
+}
+hr{
+    margin: 8px 0px;
+}
+.add-transaction label{
+    font-weight: 500;
+    margin: 10px 0px;
+}
+input{
+    height: 25px;
+    outline: none;
+}
+.add-transaction button{
+    margin-top: 10px;
+    background-color: rgb(101, 101, 142);
+    height: 30px;
+    color: white;
+    border: none;
+}
